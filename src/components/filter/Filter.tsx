@@ -24,7 +24,7 @@ export default function Filter() {
 
     useEffect(() => {
         filterTodo(filter);
-    }, [filter]);
+    }, [filter, filterTodo]);
 
     return (
         <div className="select-custom font-size-16">
@@ -39,7 +39,7 @@ export default function Filter() {
                 <ul className={`select-dropdown display-${isOpenDropdown}`}>
                     {
                         filters.map(item =>
-                            <li role="option" key={item} onClick={() => DropdwonHadler(item)}>
+                            <li key={item} onClick={() => DropdwonHadler(item)}>
                                 <div>{item}</div>
                             </li>
                         )

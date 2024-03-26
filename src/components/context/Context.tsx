@@ -22,6 +22,7 @@ export default function Context({ children }: { children: React.ReactNode }) {
                 todo.completed = status;
                 setTodos([...todos]);
             }
+            return false;
         });
         setError(response.res_error);
     }
@@ -35,6 +36,7 @@ export default function Context({ children }: { children: React.ReactNode }) {
                 todo.title = title;
                 setTodos([...todos]);
             }
+            return false;
         });
         setError(response.res_error);
     };
