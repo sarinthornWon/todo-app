@@ -1,0 +1,31 @@
+.progress-container {
+    background-color: #E07C7C;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.progress-header {
+    font-weight: 500;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.progress-bar {
+    height: 7.5px;
+    border-radius: 7.5px;
+    background-color: #3B3B3B;
+    margin: 15px 0;
+
+    div {
+        height: 7.5px;
+        border-radius: 7.5px;
+        background-color: #FFFFFF;
+        margin: 15px 0;
+    }
+}
+
+.progress-no-completed {
+    font-weight: 400;
+    line-height: 19px;
+    color: #EBB9B8;
+}
